@@ -134,3 +134,4 @@ class BaseModelTest(unittest.TestCase):
 
         with self.assertRaises(TypeError):
             b1.to_dict("h")
+
