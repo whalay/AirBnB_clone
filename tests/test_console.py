@@ -549,6 +549,7 @@ class ConsoleTest(unittest.TestCase):
 
         # check if a model exist and destroy it
         destroy = False
+        
         with patch("sys.stdout", new=StringIO()) as f:
             HBNBCommand().onecmd("all Review")
             value = f.getvalue()[:-1]
